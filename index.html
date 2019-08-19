@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+        
+<link rel="stylesheet" href="css/topcoat-desktop-dark.min.css"/>
+<link  id="hostStyle" rel="stylesheet" href="css/styles.css"/>
+
+<title></title>
+</head>
+
+<body class="hostElt">
+
+    <div id="content">        
+        
+        <div>                
+            <button id="writeXMP" class="topcoat-button--large hostFontSize">XMP 書き込み</button>                
+        </div>   
+        <form action="" name="XMP">
+            <ul id="XMPdata">
+                <li><input type="text" class="topcoat-text-input order" id="media">media</li>
+                <li><input type="text" class="topcoat-text-input order" id="width">width</li>
+                <li><input type="text" class="topcoat-text-input order" id="height">height</li>
+                <li><input type="text" class="topcoat-text-input order" id="lamination">lamination</li>
+                <li><input type="text" class="topcoat-text-input order" id="cut">cut</li>
+            </ul>
+        </form>    
+        <button class="topcoat-button--large hostFontSize" id="loadXMP">XMP 読み込み</button>
+        <form name="text">
+            <textarea class="topcoat-textarea" id="writeArea"></textarea>
+        </form>
+        <button class="topcoat-button--large hostFontSize" id="importText">テキスト　出力</button>
+    </div>
+    
+    <!-- These are debugging shortcuts.  Class debuglink items only appear in debug mode  -->
+    <span class="debuglink" id="reload">Reload</span>
+    <span class="debuglink" id="debug">Debug</span>
+    <span class="debuglink" id="sources">Sources</span>
+    
+    <script src="js/libs/CSInterface.js"></script>
+
+    <script src="js/themeManager.js"></script>
+    <script src="js/main.js"></script>
+
+        
+</body>
+</html>
